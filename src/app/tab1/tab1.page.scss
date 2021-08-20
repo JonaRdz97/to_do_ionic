@@ -1,0 +1,123 @@
+.app-header-tab1{
+    color: gray;
+    padding-left: 1rem;   
+    .header-title{
+        color: #262626;
+        font-size: 2.2rem;
+        font-weight: 800;
+    }
+    .header-greeting{
+        font-size: 1rem;
+    }
+    .header-pending-tasks{
+        font-size: .8rem;
+    }
+}
+
+.date{
+    font-weight: 500;
+    width: 100%;
+    padding-left: 1rem;
+    margin: 40px auto 10px;
+}
+
+.category-tasks-container{
+    margin: 40px 1rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    .category-card{
+        border-radius: 20px;
+        height: 150px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding: 1rem;
+        .category-info{
+            color: #f2f2f2;
+            .number-tasks-pending{
+                margin: 0 0 4px;
+                font-weight: 300;
+                font-size: 1.1rem;
+            }
+            .category-name{
+                margin: 0;
+                font-weight: 500;
+                font-size: 1.4rem;
+            }
+        }
+        .add-icon{
+            align-content: center;
+            width: 40%;
+            height: 40%;
+            margin: auto;
+        }
+    }
+}
+
+
+.all{
+    background: rgb(40,200,252);
+    background-image: -moz-linear-gradient(90deg, rgba(40, 199, 252, 0.658) 23%, rgba(80,155,255,0.836) 54%, rgba(124,135,254,0.836) 100%), url('../../assets/bg-all.jpg');
+    background-image: -webkit-linear-gradient(90deg, rgba(40, 199, 252, 0.658) 23%, rgba(80,155,255,0.836) 54%, rgba(124,135,254,0.836) 100%), url('../../assets/bg-all.jpg');
+    background-image: linear-gradient(90deg, rgba(40, 199, 252, 0.658) 23%, rgba(80,155,255,0.836) 54%, rgba(124,135,254,0.836) 100%), url('../../assets/bg-all.jpg');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#28c8fc",endColorstr="#7c87fe",GradientType=1);
+    background-position: right;
+    background-size: cover;
+}
+
+.personal{
+    background: rgb(252,177,124);
+    background: -moz-linear-gradient(90deg, rgba(252,177,124,0.9307073171065301) 23%, rgba(255,202,133,0.8410714627647934) 54%, rgba(254,216,129,0.7290266448376226) 100%), url('../../assets/bg-personal.jpg');
+    background: -webkit-linear-gradient(90deg, rgba(252,177,124,0.9307073171065301) 23%, rgba(255,202,133,0.8410714627647934) 54%, rgba(254,216,129,0.7290266448376226) 100%), url('../../assets/bg-personal.jpg');
+    background: linear-gradient(90deg, rgba(252,177,124,0.9307073171065301) 23%, rgba(255,202,133,0.8410714627647934) 54%, rgba(254,216,129,0.7290266448376226) 100%), url('../../assets/bg-personal.jpg');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fcb17c",endColorstr="#fed881",GradientType=1);
+    background-size: cover;
+    background-position: center bottom;
+}
+
+.work{
+    background: rgb(10,182,224);
+    background: -moz-linear-gradient(90deg, rgba(10,182,224,0.8298669809720763) 23%, rgba(26,204,192,0.8578781854538691) 54%, rgba(82,227,177,0.9026961126247374) 100%), url('../../assets/bg-work.jpg');
+    background: -webkit-linear-gradient(90deg, rgba(10,182,224,0.8298669809720763) 23%, rgba(26,204,192,0.8578781854538691) 54%, rgba(82,227,177,0.9026961126247374) 100%), url('../../assets/bg-work.jpg');
+    background: linear-gradient(90deg, rgba(10,182,224,0.8298669809720763) 23%, rgba(26,204,192,0.8578781854538691) 54%, rgba(82,227,177,0.9026961126247374) 100%), url('../../assets/bg-work.jpg');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0ab6e0",endColorstr="#52e3b1",GradientType=1);
+    background-size: cover;
+    background-position: center;
+}
+
+.add{
+    height: 150px;
+    background: #F2F2F2;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .header{
+        min-height: 30vh;
+        height: auto;
+        text-align: center;
+    }
+
+    .title{
+        margin: 40px auto;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 601px and up) */
+@media only screen and (min-width: 601px) {
+    .header{
+        height: auto;
+    }
+
+    .title, .subtitle{
+        margin: 40px 60px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .title, .subtitle{
+        margin: 60px auto;
+    }
+}

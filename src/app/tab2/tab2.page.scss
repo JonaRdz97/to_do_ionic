@@ -1,0 +1,68 @@
+.app-header-tab2{
+    background: rgb(10,182,224);
+    background: -moz-linear-gradient(90deg, rgba(10,182,224,0.8298669809720763) 23%, rgba(26,204,192,0.8578781854538691) 54%, rgba(82,227,177,0.9026961126247374) 100%), url('../../assets/bg-completed.jpg');
+    background: -webkit-linear-gradient(90deg, rgba(10,182,224,0.8298669809720763) 23%, rgba(26,204,192,0.8578781854538691) 54%, rgba(82,227,177,0.9026961126247374) 100%), url('../../assets/bg-completed.jpg');
+    background: linear-gradient(90deg, rgba(10,182,224,0.8298669809720763) 23%, rgba(26,204,192,0.8578781854538691) 54%, rgba(82,227,177,0.9026961126247374) 100%), url('../../assets/bg-completed.jpg');
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0ab6e0",endColorstr="#52e3b1",GradientType=1);
+    background-size: cover;
+    background-position: center;
+    padding: 1rem;
+    letter-spacing: 1px;
+    min-height: 25vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    .header-text-container{
+        color: #f2f2f2;
+        .header-text-title{
+            margin: 0 0 4px;
+            font-weight: 300;
+            font-size: 1.2rem;
+        }
+        .header-text-subtitle{
+            margin: 0;
+            font-weight: 500;
+            font-size: 2.5rem;
+        }
+    }
+}
+
+.tasks-container{
+    .task{
+        padding: 1rem;
+        color: gray;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: .5px solid #EAEDED;
+        .info-container{
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+           .check-icon{
+               width: 30px;
+               height: 30px;
+               color: #2ECC71;
+           } 
+           .text-container{
+               .task-title{
+                   margin: 0;
+                   font-size: 1.1rem;
+                   font-weight: 500;
+                   text-decoration: line-through;
+               }
+               .priority{
+                   font-weight: 300;
+                   font-size: .8rem;
+                   margin: 8px auto 0;
+                   text-decoration: line-through;
+               }
+           }
+        }
+        .delete-icon{
+            width: 25px;
+            height: 25px;
+        }
+    }
+}

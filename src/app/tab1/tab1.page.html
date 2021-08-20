@@ -1,17 +1,31 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
+<ion-header class="app-header-tab1">
+  <h1 class="header-title">Hi Jonathan!</h1>
+  <h5 class="header-greeting">Have a good vibe.</h5>
+  <h5 class="header-pending-tasks">You have 5 tasks for today.</h5>
 </ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <h6 class="date">{{date}}</h6>
+  <div class="category-tasks-container">
+    <div class="category-card all">
+      <div class="category-info">
+        <h5 class="number-tasks-pending">5 Tasks</h5>
+        <h3 class="category-name">All Task</h3>
+      </div>
+    </div>
+    <div class="category-card personal">
+      <div class="category-info">
+        <h5 class="number-tasks-pending">4 Tasks</h5>
+        <h3 class="category-name">Personal</h3>
+      </div>
+    </div>
+    <div class="category-card work">
+      <div class="category-info">
+        <h5 class="number-tasks-pending">1 Tasks</h5>
+        <h3 class="category-name">Work</h3>
+      </div>
+    </div>
+    <div class="category-card add">
+      <ion-icon class="add-icon" name="add-outline"></ion-icon>
+    </div>
+  </div>
 </ion-content>

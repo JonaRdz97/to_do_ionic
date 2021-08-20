@@ -1,17 +1,51 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
-    </ion-title>
-  </ion-toolbar>
+<ion-header class="app-header-tab2">
+  <div class="header-text-container">
+    <h1 class="header-text-title">My Completed</h1>
+    <h5 class="header-text-subtitle">Tasks</h5>
+  </div>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+  <div class="tasks-container">
+    <div class="task" *ngFor="let task of todos" >
+      <div class="info-container">
+        <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
+        <div class="text-container">
+          <h6 class="task-title">{{task.title}}</h6>
+          <p class="priority">Priority: {{task.prioridad | titlecase}}</p>
+        </div>
+      </div>
+      <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
+    </div>
+    <div class="task">
+      <div class="info-container">
+        <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
+        <div class="text-container">
+          <h6 class="task-title">Ver series</h6>
+          <p class="priority">Priority: Alta</p>
+        </div>
+      </div>
+      <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
+    </div>
+    <div class="task">
+      <div class="info-container">
+        <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
+        <div class="text-container">
+          <h6 class="task-title">Bañar al perro</h6>
+          <p class="priority">Priority: Media</p>
+        </div>
+      </div>
+      <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
+    </div>
+    <div class="task">
+      <div class="info-container">
+        <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
+        <div class="text-container">
+          <h6 class="task-title">Estudiar</h6>
+          <p class="priority">Priority: Baja</p>
+        </div>
+      </div>
+      <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
+    </div>
+  </div>
 </ion-content>

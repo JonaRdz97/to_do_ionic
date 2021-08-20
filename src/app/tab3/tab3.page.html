@@ -1,17 +1,50 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
-  </ion-toolbar>
+<ion-header class="app-header-tab3">
+  <div class="header-text-container">
+    <h1 class="header-text-title">My Pending</h1>
+    <h5 class="header-text-subtitle">Tasks</h5>
+  </div>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <div class="tasks-container">
+    <div class="task" *ngFor="let task of todos">
+      <div class="info-container">
+        <ion-icon class="pending-icon" name="time"></ion-icon>
+        <div class="text-container">
+          <h6 class="task-title">{{task.title}}</h6>
+          <p class="priority">Priority: {{task.prioridad | titlecase}}</p>
+        </div>
+      </div>
+      <div class="actions-container">
+        <ion-icon class="edit-icon" name="create-outline"></ion-icon>
+        <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
+      </div>
+    </div>
+    <div class="task">
+      <div class="info-container">
+        <ion-icon class="pending-icon" name="time"></ion-icon>
+        <div class="text-container">
+          <h6 class="task-title">Ir de viaje</h6>
+          <p class="priority">Priority: Media</p>
+        </div>
+      </div>
+      <div class="actions-container">
+        <ion-icon class="edit-icon" name="create-outline"></ion-icon>
+        <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
+      </div>
+    </div>
+    <div class="task">
+      <div class="info-container">
+        <ion-icon class="pending-icon" name="time"></ion-icon>
+        <div class="text-container">
+          <h6 class="task-title">Leer</h6>
+          <p class="priority">Priority: Baja</p>
+        </div>
+      </div>
+      <div class="actions-container">
+        <ion-icon class="edit-icon" name="create-outline"></ion-icon>
+        <ion-icon class="delete-icon" name="trash-outline"></ion-icon>
+      </div>
+    </div>
+  </div>
 </ion-content>
